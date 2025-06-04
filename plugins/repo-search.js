@@ -18,12 +18,12 @@ cmd({
     const { data } = await axios.get(apiUrl);
 
     let responseMsg = `📁 *GitHub Repository Info* 📁\n\n`;
-    responseMsg += `📌 *Name*: FAISAL-MD\n`;
-    responseMsg += `🔗 *URL*: https://github.com/Queen-anita/FAISAL-MD-watsapp-new-bot\n`;
-    responseMsg += `📝 *Description*: This FAISAL-MD Whatsapp Bot Created By The Proector & Samuza\n`;
-    responseMsg += `👤 *Owner*: FAISAL-MD\n`;
-    responseMsg += `📅 *Created At*:2025/05/16\n`;
-    responseMsg += `\n> *© Powered by FAISAL-MD*`;
+    responseMsg += `📌 *Name*: VENGEANCE-XMD\n`;
+    responseMsg += `🔗 *URL*: https://github.com/VENGEANCE254/VENGEANCE-XMD \n`;
+    responseMsg += `📝 *Description*: This VENGEANCE-XMD Whatsapp Bot Created By HACKLINK TECH.INC\n`;
+    responseMsg += `👤 *Owner*: HACKLINK TECH.INC\n`;
+    responseMsg += `📅 *Created At*:2025/06/04\n`;
+    responseMsg += `\n> *© Powered by VENGEANCE-XMD*`;
 
     await conn.sendMessage(from, { text: responseMsg }, { quoted: m });
   } catch (error) {
