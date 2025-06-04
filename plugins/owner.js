@@ -29,8 +29,8 @@ async (conn, mek, m, { from }) => {
 
         // Send the owner contact message with image and audio
         await conn.sendMessage(from, {
-            image: { url: 'https://qu.ax/bfZVV.jpg' }, // Image URL from your request
-            caption: `╭━━〔 *FAISAL-MD* 〕━━┈⊷
+            image: { url: 'https://files.catbox.moe/k7cko8.jpg' }, // Image URL from your request
+            caption: `╭━━〔 *VENGEANCE-XMD* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *Here is the owner details*
 ┃◈┃• *Name* - ${ownerName}
@@ -38,14 +38,14 @@ async (conn, mek, m, { from }) => {
 ┃◈┃• *Version*: 2.0.0 Beta
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜰᴀɪꜱᴀʟ-ᴍᴅ`, // Display the owner's details
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ VENGEANCE-XMD`, // Display the owner's details
             contextInfo: {
                 mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`], 
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363207624903731@newsletter',
-                    newsletterName: 'FAISAL-MD',
+                    newsletterJid: '120363400583993139@newsletter',
+                    newsletterName: 'VENGEANCE-XMD',
                     serverMessageId: 143
                 }            
             }
@@ -53,7 +53,7 @@ async (conn, mek, m, { from }) => {
 
         // Send audio as per your request
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/JawadYT36/KHAN-DATA/raw/refs/heads/main/autovoice/menunew.m4a' }, // Audio URL
+            audio: { url: 'https://files.catbox.moe/93yy2m.mp3' }, // Audio URL
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
