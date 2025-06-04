@@ -1,4 +1,4 @@
-// code by ⿻ ⌜ 𝐊𝐇𝐀𝐍 ⌟⿻⃮͛🇵🇰𖤐
+// code by ⿻ ⌜ VENGEANCE-XMD 𖤐
 
 const axios = require("axios");
 const config = require('../config');
@@ -31,14 +31,14 @@ async (conn, mek, m, {
     // give credit and use
     const imageMessage = {
       image: { url: screenshotUrl },
-      caption: "*WEB SS DOWNLOADER*\n\n> *© Powered By FAISAL-MD*",
+      caption: "*WEB SS DOWNLOADER*\n\n> *© Powered By VENGEANCE-XMD*",
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-        newsletterJid: '123456789123456789@newsletter',
-        newsletterName: 'TempMail Service',
+        newsletterJid: '120363400583993139@newsletter',
+        newsletterName: 'VENGEANCE-XMD',
           serverMessageId: 143,
         },
       },
@@ -51,4 +51,4 @@ async (conn, mek, m, {
   }
 });
 
-// ⿻ ⌜ 𝐊𝐇𝐀𝐍 ⌟⿻⃮͛🇵🇰𖤐
+// ⿻ ⌜ VENGEANCE-XMD 
