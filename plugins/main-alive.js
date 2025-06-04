@@ -41,7 +41,17 @@ async (conn, mek, m, { from, sender, reply }) => {
                 }
             }
         }, { quoted: mek });
-
+// Send audio
+        await conn.sendMessage(from, {
+            audio: { url: 'https://files.catbox.moe/wqmutx.mp3' },
+            mimetype: 'audio/mp4',
+            ptt: true
+        }, { quoted: mek });
+        
+    } catch (e) {
+        console.log(e);
+        reply(`❌ Error: ${e}`);
+                    }
     } catch (e) {
         console.error("Alive Error:", e);
         reply(`An error occurred: ${e.message}`);
