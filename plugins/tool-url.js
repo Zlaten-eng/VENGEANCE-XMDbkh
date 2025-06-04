@@ -65,7 +65,7 @@ cmd({
       `*${mediaType} Uploaded Successfully*\n\n` +
       `*Size:* ${formatBytes(mediaBuffer.length)}\n` +
       `*URL:* ${mediaUrl}\n\n` +
-      `> © Uploaded by FAISAL-MD 💜`
+      `> © Uploaded by VENGEANCE-XMD`
     );
 
   } catch (error) {
