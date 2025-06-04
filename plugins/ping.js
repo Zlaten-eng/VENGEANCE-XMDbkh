@@ -1,9 +1,11 @@
 const config = require('../config');
-const { cmd, commands } = require('../command');
+const { cmd } = require('../command');
 
+// First Ping Command
 cmd({
     pattern: "ping",
-    alias: ["speed","pong"],use: '.ping',
+    alias: ["speed", "pong"],
+    use: '.ping',
     desc: "Check bot's response time.",
     category: "main",
     react: "⚡",
@@ -19,12 +21,11 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
         const reactionEmoji = reactionEmojis[Math.floor(Math.random() * reactionEmojis.length)];
         let textEmoji = textEmojis[Math.floor(Math.random() * textEmojis.length)];
 
-        // Ensure reaction and text emojis are different
         while (textEmoji === reactionEmoji) {
             textEmoji = textEmojis[Math.floor(Math.random() * textEmojis.length)];
         }
 
-        // Send reaction using conn.sendMessage()
+        // React to the message
         await conn.sendMessage(from, {
             react: { text: textEmoji, key: mek.key }
         });
@@ -48,26 +49,20 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
             }
         }, { quoted: mek });
 
-    } catch (e) {
-        console.error("Error in ping command:", e);
-        reply(`An error occurred: ${e.message}`);
-    }
-});
-
-// Send audio
+        // Send PTT audio
         await conn.sendMessage(from, {
             audio: { url: 'https://files.catbox.moe/x0on9r.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
-        
+
     } catch (e) {
-        console.log(e);
-        reply(`❌ Error: ${e}`);
-}
+        console.error("Error in ping command:", e);
+        reply(`❌ Error: ${e.message}`);
+    }
+});
 
-// ping2 
-
+// Second Ping Command
 cmd({
     pattern: "ping2",
     desc: "Check bot's response time.",
@@ -75,15 +70,21 @@ cmd({
     react: "🍂",
     filename: __filename
 },
-async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+async (conn, mek, m, {
+    from, quoted, reply
+}) => {
     try {
-        const startTime = Date.now()
-        const message = await conn.sendMessage(from, { text: '*PINGING...*' })
-        const endTime = Date.now()
-        const ping = endTime - startTime
-        await conn.sendMessage(from, { text: `*🔥 VENGEANCE-XMD SPEED : ${ping}ms*` }, { quoted: message })
+        const startTime = Date.now();
+        const message = await conn.sendMessage(from, { text: '*PINGING...*' });
+        const endTime = Date.now();
+        const ping = endTime - startTime;
+
+        await conn.sendMessage(from, {
+            text: `*🔥 VENGEANCE-XMD SPEED : ${ping}ms*`
+        }, { quoted: message });
+
     } catch (e) {
-        console.log(e)
-        reply(`${e}`)
+        console.log("Error in ping2:", e);
+        reply(`${e}`);
     }
-})
+});
