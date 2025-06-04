@@ -32,7 +32,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
         const end = new Date().getTime();
         const responseTime = (end - start) / 1000;
 
-        const text = `> *FAISAL-MD SPEED: ${responseTime.toFixed(2)}ms ${reactionEmoji}*`;
+        const text = `> *VENGEANCE-XMD SPEED: ${responseTime.toFixed(2)}ms ${reactionEmoji}*`;
 
         await conn.sendMessage(from, {
             text,
@@ -41,8 +41,8 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '123456789123456789@newsletter',
-                    newsletterName: "FAISAL-MD",
+                    newsletterJid: '120363400583993139@newsletter',
+                    newsletterName: "VENGEANCE-XMD",
                     serverMessageId: 143
                 }
             }
@@ -53,6 +53,18 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
         reply(`An error occurred: ${e.message}`);
     }
 });
+
+// Send audio
+        await conn.sendMessage(from, {
+            audio: { url: 'https://files.catbox.moe/x0on9r.mp3' },
+            mimetype: 'audio/mp4',
+            ptt: true
+        }, { quoted: mek });
+        
+    } catch (e) {
+        console.log(e);
+        reply(`❌ Error: ${e}`);
+}
 
 // ping2 
 
@@ -69,7 +81,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const message = await conn.sendMessage(from, { text: '*PINGING...*' })
         const endTime = Date.now()
         const ping = endTime - startTime
-        await conn.sendMessage(from, { text: `*🔥 FAISAL-MD SPEED : ${ping}ms*` }, { quoted: message })
+        await conn.sendMessage(from, { text: `*🔥 VENGEANCE-XMD SPEED : ${ping}ms*` }, { quoted: message })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
