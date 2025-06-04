@@ -24,16 +24,16 @@ cmd({
 ╰━━━━━━━━━━━━━━━┈⊷
 ╭━━〔 *Menu List* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈│1️⃣  📥 *Download Menu*
-┃◈│2️⃣  👥 *Group Menu*
-┃◈│3️⃣  😄 *Fun Menu*
-┃◈│4️⃣  👑 *Owner Menu*
-┃◈│5️⃣  🤖 *AI Menu*
-┃◈│6️⃣  🎎 *Anime Menu*
-┃◈│7️⃣  🔄 *Convert Menu*
-┃◈│8️⃣  📌 *Other Menu*
-┃◈│9️⃣  💞 *Reactions Menu*
-┃◈│🔟  🏠 *Main Menu*
+┃◈│1️⃣  >*Download Menu*
+┃◈│2️⃣  >*Group Menu*
+┃◈│3️⃣  >*Fun Menu*
+┃◈│4️⃣  >*Owner Menu*
+┃◈│5️⃣  >*AI Menu*
+┃◈│6️⃣  >*Anime Menu*
+┃◈│7️⃣  >*Convert Menu*
+┃◈│8️⃣  >*Other Menu*
+┃◈│9️⃣  >*Reactions Menu*
+┃◈│🔟  >*Main Menu*
 ┃◈╰───────────┈⊷
 ╰──────────────┈⊷
 > ${config.DESCRIPTION}`;
@@ -43,8 +43,8 @@ cmd({
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363363023106228@newsletter',
-                newsletterName: config.OWNER_NAME,
+                newsletterJid: '120363400583993139@newsletter',
+                newsletterName: 'VENGEANCE-XMD',
                 serverMessageId: 143
             }
         };
@@ -55,7 +55,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://qu.ax/bfZVV.jpg' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/k7cko8.jpg' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
@@ -76,7 +76,7 @@ cmd({
             try {
                 await new Promise(resolve => setTimeout(resolve, 1000)); // Small delay after image
                 await conn.sendMessage(from, {
-                    audio: { url: 'https://files.catbox.moe/s2opji.mp3' },
+                    audio: { url: 'https://files.catbox.moe/93yy2m.mp3' },
                     mimetype: 'audio/mp3',
                     ptt: true,
                 }, { quoted: mek });
@@ -423,7 +423,7 @@ cmd({
                                 await conn.sendMessage(
                                     senderID,
                                     {
-                                        image: { url: config.MENU_IMAGE_URL || 'https://qu.ax/bfZVV.jpg' },
+                                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/k7cko8.jpg' },
                                         caption: selectedMenu.content,
                                         contextInfo: contextInfo
                                     },
