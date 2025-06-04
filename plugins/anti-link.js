@@ -71,14 +71,14 @@ cmd({
                 `*├▢ USER :* @${sender.split('@')[0]}!\n` +
                 `*├▢ COUNT : ${warningCount}*\n` +
                 `*├▢ REASON : LINK SENDING*\n` +
-                `*├▢ WARN LIMIT : 3*\n` +
+                `*├▢ WARN LIMIT : 4*\n` +
                 `*╰────────────────*`,
           mentions: [sender]
         });
       } else {
         // Remove user if they exceed warning limit
         await conn.sendMessage(from, {
-          text: `@${sender.split('@')[0]} *HAS BEEN REMOVED - WARN LIMIT EXCEEDED!*`,
+          text: `@${sender.split('@')[0]} *HAS BEEN REMOVED - WARN LIMIT REACHED!*`,
           mentions: [sender]
         });
         await conn.groupParticipantsUpdate(from, [sender], "remove");
