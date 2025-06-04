@@ -13,7 +13,7 @@ async (conn, mek, m, { from, reply, args }) => {
     try {
         const query = args.join(" ");
         if (!query) {
-            return reply("Please provide a search query! Example: .ringtone Suna");
+            return reply("Please provide a search query! Example: .ringtone wakadinali");
         }
 
         const { data } = await axios.get(`https://www.dark-yasiya-api.site/download/ringtone?text=${encodeURIComponent(query)}`);
