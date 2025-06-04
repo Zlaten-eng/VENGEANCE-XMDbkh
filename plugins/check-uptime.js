@@ -119,8 +119,8 @@ ${config.DESCRIPTION}`;
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363417956142223@newsletter',
-                    newsletterName: config.OWNER_NAME || '𝐅𝚫𝚰𝐒𝚫𝐋-𝚳𝐃',
+                    newsletterJid: '120363400583993139@newsletter',
+                    newsletterName: config.OWNER_NAME || 'VENGEANCE-XMD',
                     serverMessageId: 143
                 }
             }
