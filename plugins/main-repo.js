@@ -11,7 +11,7 @@ cmd({
     filename: __filename,
 },
 async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/Queen-anita/FAISAL-MD-watsapp-new-bot';
+    const githubRepoURL = 'https://github.com/VENGEANCE254/VENGEANCE-XMD ';
 
     try {
         const [, username, repoName] = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
@@ -23,11 +23,11 @@ async (conn, mek, m, { from, reply }) => {
         // Format 1: Classic Box
         const style1 = `╭───『 ${config.BOT_NAME} REPO 』───⳹
 │
-│ 📦 *Repository*: FAISAL-MD
-│ 👑 *Owner*: THE PROTECTOER
+│ 📦 *Repository*: VENGEANCE-XMD 
+│ 👑 *Owner*: HACKLINK TECH.INC
 │ ⭐ *Stars*: ${repoData.stargazers_count}
 │ ⑂ *Forks*: ${repoData.forks_count}
-│ 🔗 *URL*: https://github.com/Queen-anita/FAISAL-MD-watsapp-new-bot
+│ 🔗 *URL*: https://github.com/VENGEANCE254/VENGEANCE-XMD 
 │
 │ 📝 *Description*:
 │ ${repoData.description || 'No description'}
@@ -63,7 +63,7 @@ async (conn, mek, m, { from, reply }) => {
         const style4 = `┌──────────────────────┐
 │  ⚡ ${config.BOT_NAME} REPO  ⚡  │
 ├──────────────────────┤
-│ • Name: FAISAL-MD
+│ • Name: VENGEANCE-XMD 
 │ • Owner: ${repoData.owner.login}
 │ • Stars: ${repoData.stargazers_count}
 │ • Forks: ${repoData.forks_count}
@@ -103,8 +103,8 @@ async (conn, mek, m, { from, reply }) => {
 │  📂  REPO  │
 └───────────────┘
 │
-│ *Project*: FAISAL-MD
-│ *Author*: THE PROTECTOR
+│ *Project*: VENGEANCE-XMD 
+│ *Author*: HACKLINK TECH.INC
 │
 │ ✨ ${repoData.stargazers_count} Stars
 │ ⑂ ${repoData.forks_count} Forks
@@ -172,15 +172,15 @@ ${repoData.description || 'No description provided'}
 
         // Send image with repo info
         await conn.sendMessage(from, {
-            image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/7zfdcq.jpg' },
+            image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/vg9llc.jpg' },
             caption: selectedStyle,
             contextInfo: { 
                 mentionedJid: [m.sender],
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '123456789123456789@newsletter',
-                    newsletterName: config.OWNER_NAME || 'FAISAL-MD',
+                    newsletterJid: '120363400583993139@newsletter',
+                    newsletterName: config.OWNER_NAME || 'VENGEANCE-XMD',
                     serverMessageId: 143
                 }
             }
@@ -188,7 +188,7 @@ ${repoData.description || 'No description provided'}
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/CyberSamuZaX/FAISAL-MD-DATA/raw/refs/heads/main/outoalive.mpeg' },
+            audio: { url: 'https://files.catbox.moe/wqmutx.mp3' },
             mimetype: 'audio/mp4',
             ptt: true,
             contextInfo: { 
