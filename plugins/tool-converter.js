@@ -35,7 +35,7 @@ cmd({
         // Send result
         await client.sendMessage(from, {
             image: imageBuffer,
-            caption: "> Powered By FAISAL-MD 🤍",
+            caption: "> Powered By VENGEANCE-XMD",
             mimetype: 'image/png'
         }, { quoted: message });
 
