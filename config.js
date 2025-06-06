@@ -5,7 +5,7 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "SIGMA-MD~OhBjgbQK#RavkVhT0wEKo05-pxT0c7L35S1MwMjbFWyf5jfcJWyY",
+SESSION_ID: process.env.SESSION_ID || "SIGMA-MD~m0YT2KTY#s9pPP2TN5TNh0oxJK12iJIRNvHWzO071qCoU4_XQqig",
 // add your Session Id 
 AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
 // make true or false status auto seen
@@ -25,7 +25,7 @@ MENTION_REPLY: process.env.MENTION_REPLY || "false",
 // make true if want auto voice reply if someone menetion you 
 MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/k7cko8.jpg",
 // add custom menu and mention reply image url
-PREFIX: process.env.PREFIX || "V",
+PREFIX: process.env.PREFIX || "🦦",
 // add your prifix for bot   
 BOT_NAME: process.env.BOT_NAME || "VENGEANCE-XMD",
 // add bot namw here for menu
@@ -71,7 +71,7 @@ AUTO_TYPING: process.env.AUTO_TYPING || "false",
 // true for automatic show typing   
 READ_CMD: process.env.READ_CMD || "false",
 // true if want mark commands as read 
-DEV: process.env.DEV || "254769677305",
+DEV: process.env.DEV || "254117748183",
 //replace with your whatsapp number        
 ANTI_VV: process.env.ANTI_VV || "true",
 // true for anti once view 
